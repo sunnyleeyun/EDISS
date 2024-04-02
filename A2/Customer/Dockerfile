@@ -1,6 +1,6 @@
 # Dockerfile:
 
-FROM node:10
+FROM --platform=linux/arm node:10
 
 # Create app directory
 WORKDIR /usr/src/app

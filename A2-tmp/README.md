@@ -61,6 +61,7 @@ INSERT INTO Book (ISBN, title, Author, description, genre, price, quantity) VALU
 docker ps -a
 docker rm {}
 docker build -t your_dockerhub_username/nodejs-image-demo .
+docker image -t your_dockerhub_username/nodejs-image-demo your_dockerhub_username/nodejs-image-demo
 docker run --name nodejs-image-demo -p 8080:8080 -d your_dockerhub_username/nodejs-image-demo
 docker logs {}
 ```
